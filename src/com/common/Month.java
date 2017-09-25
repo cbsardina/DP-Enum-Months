@@ -24,7 +24,10 @@ public enum Month {
         return englishName;
     }
 
-    public void setEnglishName(String englishName) {
-        this.englishName = englishName;
+    public void remainingMonths(Month[] month, int moPos) {
+        System.out.println("The remaining months in the year are: ");
+        for(int i = moPos+1; i < 12; i++) {
+            System.out.println(month[i].getEnglishName());
+        }
     }
 }
